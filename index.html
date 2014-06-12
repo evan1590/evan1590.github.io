@@ -12,8 +12,44 @@
 
   </head>
   <body>
-    <div class="navbar navbar-default navbar-static-top" role="navigation" style="background-color: black; height =75px" >
-      <div class="container"> <!-- makes a conatiner div -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Evan Chessman</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">E-mail</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container" style="height: 500px">
+        <h1>Sir Overlord Evan Chessman</h1>
+        
+        <!-- <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p> -->
+      </div>
+    </div>
+    <!-- <div class="navbar navbar-default navbar-static-top" role="navigation" style="background-color: black; height =75px" >
+      <div class="container"> 
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Evan Chessman</a>
         </div>
@@ -38,7 +74,7 @@
         <p>Hello World</p>
         <img src="">
       </div>
-    </div>
+    </div> -->
     <div class ="container">
       <div class="row">
         <div class="col-md-4">CineMap</div>
@@ -55,7 +91,7 @@
           <p>The primary purpose of CineMap is to provide users with a way to visualize trends in film exhibition within the continental United States over the roughly 100-year history of feature-length motion pictures. CineMap will allow users to view information about individual theaters’ ownership and years of operation.
           </p>
           <!-- <hr class="featurette-divider"> -->
-          <h4 class="featurette-heading">Languages/Tools: <span class= "text-muted">Node.js, Express 4, JavaScript, jQuery, HTML, CSS, Bootstrap</span></h4>
+          <h3 class="featurette-heading">Languages/Tools: <span class= "text-muted">Node.js, Express 4, JavaScript, jQuery, HTML, CSS, Bootstrap</span></h3>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive" src="CinemapRadarGraph.png">
@@ -73,7 +109,7 @@
             </h1>
             <p> A Glass app designed and implemented in Python using the Mirror API. The app acts as an interactive tour that continually gives the user accurate and historical data of the various buildings at Wheaton College.</p>
             <!-- <hr class="featurette-divider"> -->
-            <h4 class="featurette-heading">Languages/Tools: <span class= "text-muted">Python, HTML, CSS, XML</span></h4>
+            <h3 class="featurette-heading">Languages/Tools: <span class= "text-muted">Python, HTML, CSS, XML</span></h3>
         </div>
       </div>
       <hr class="featurette-divider">
@@ -84,7 +120,7 @@
           </h1>
           <p>Created an interactive website aimed at introductory level German speakers for the advancement and practice of German vocabulary and grammar. Implemented two-way and three-way matching card exercises, as well as fill in the blank and multiple choice activities.</p>
           <!-- <hr class="featurette-divider"> -->
-          <h4 class="featurette-heading">Languages/Tools: <span class= "text-muted">HTML, CSS, jQuery and JavaScript</span></h4>
+          <h3 class="featurette-heading">Languages/Tools: <span class= "text-muted">HTML, CSS, jQuery and JavaScript</span></h3>
         </div>
         <div class= "col-md-5">
           <img class="featurette-image img-responsive" src="GermanShot.png">
