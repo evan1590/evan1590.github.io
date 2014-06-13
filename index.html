@@ -27,6 +27,8 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li id="Projects"><a href="#Projects">Projects</a></li>
+            <!-- <li id="Projects">Projects</li> -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -87,8 +89,8 @@ line-height: 1.1;
         <div class="col-md-4">LyonTracks</div>
         <div class="col-md-4">German grammer Website</div>
       </div>
-      <hr class="featurette-divider">
-      <div class ="row featurette">
+      <hr class="featurette-divider" id="ProjectsTop">
+      <div class ="row featurette" >
         <div class="col-md-7">
           <h1 class="featurette-heading">
           CineMap: 
@@ -161,5 +163,12 @@ line-height: 1.1;
     <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $("#Projects").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#ProjectsTop").offset().top
+        } , 2000);
+      });
+    </script>
   </body>
 </html>
