@@ -25,15 +25,15 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li id="about"><a href="#about">About</a></li>
             <!--  <li id="Projects"><a href="#projects">Projects</a></li>-->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li id="cinemap"><a href="#CineMap">CineMap</a></li>
                 <li id="lyontracks"><a href="#LyonTracks">LyonTracks</a></li>
-                <li id="german"><a href="#">German Website</a></li>
+                <li id="german"><a href="#German Website">German Website</a></li>
               </ul>
             </li>
             <!-- <li class="dropdown">
@@ -55,7 +55,7 @@
       <div class="container" style="height: 500px;">
       <br>
       <br>
-        <h1 style="color: white; font-family: inherit; font-weight: 700; line-height: 1.1;">Evan Chessman</h1>
+        <h1 id ="aboutTop" style="color: white; font-family: inherit; font-weight: 700; line-height: 1.1;">Evan Chessman</h1>
         
         <!-- <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p> -->
       </div>
@@ -170,6 +170,12 @@
       $("#german").click(function() {
         $('html, body').animate({
           scrollTop: $("#germantop").offset().top
+        } , 2000);
+      });
+
+      $("#about").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#aboutTop").offset().top
         } , 2000);
       });
 
